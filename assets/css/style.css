@@ -1,0 +1,312 @@
+/**
+ * YearlySummary 样式文件
+ *
+ * @package YearlySummary
+ * @author xiangmingya
+ * @version 1.0
+ * @link https://xiangming.site/
+ */
+
+/* 工具栏 */
+.ys-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ys-toolbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ys-toolbar-left label {
+    font-weight: 500;
+    color: #333;
+}
+
+.ys-toolbar-left select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ys-toolbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.ys-toolbar-right .btn {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+.ys-toolbar-right .btn:hover {
+    opacity: 0.9;
+}
+
+/* 区块 */
+.ys-section {
+    margin-bottom: 24px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ys-section-title {
+    margin: 0 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 卡片网格 */
+.ys-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.ys-card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ys-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ys-card-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.ys-card-content {
+    flex: 1;
+}
+
+.ys-card-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+}
+
+.ys-card-label {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* 行列布局 */
+.ys-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.ys-col-6 {
+    flex: 1;
+    min-width: 0;
+}
+
+.ys-col-6 .ys-section {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+/* 图表容器 */
+.ys-chart-container {
+    position: relative;
+    height: 300px;
+}
+
+.ys-chart-small {
+    height: 250px;
+}
+
+/* 高亮卡片 */
+.ys-highlight-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ys-highlight-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.ys-highlight-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.ys-highlight-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.ys-highlight-title a:hover {
+    color: #667eea;
+}
+
+.ys-highlight-meta {
+    font-size: 13px;
+    color: #888;
+}
+
+.ys-highlight-empty {
+    color: #999;
+    font-size: 14px;
+}
+
+/* 表格样式增强 */
+.ys-section .typecho-list-table {
+    margin: 0;
+}
+
+.ys-section .typecho-list-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.ys-section .typecho-list-table td a {
+    color: #333;
+    text-decoration: none;
+}
+
+.ys-section .typecho-list-table td a:hover {
+    color: #667eea;
+}
+
+/* 增长率样式 */
+.ys-growth-up {
+    color: #52c41a;
+    font-weight: 600;
+}
+
+.ys-growth-down {
+    color: #ff4d4f;
+    font-weight: 600;
+}
+
+/* 标签云 */
+.ys-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ys-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: transform 0.2s;
+}
+
+.ys-tag:hover {
+    transform: scale(1.05);
+}
+
+.ys-tag em {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/* 空状态 */
+.ys-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+/* 页脚 */
+.ys-footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+}
+
+.ys-footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.ys-footer a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .ys-toolbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ys-toolbar-left,
+    .ys-toolbar-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ys-row {
+        flex-direction: column;
+    }
+
+    .ys-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ys-card-value {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ys-cards {
+        grid-template-columns: 1fr;
+    }
+}
